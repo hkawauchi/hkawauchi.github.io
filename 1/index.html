@@ -20,7 +20,13 @@
     1
     
     <script src="https://cdn.pushassist.com/account/assets/psa-kkka3.js" async="async"></script>
+    <!-- <script type="text/javascript" src="https://cdn.pushassist.com/account/assets/psa-kkka3.js" async></script> -->
     <script> 
+    var _pa = [];
+    _pa.push('foo'); 
+    
+    /*  */
+    
     setTimeout(function(){
       
       var subscriber = _pa_isSubscribed();
@@ -37,8 +43,6 @@
     // var subscriber = JSON.parse(_pa_subscriberID());
     // console.log(subscriber['subscriber_id'] + ', ' + subscriber['browser']);    
     
-          // var _pa = [];
-          // _pa.push('segmentname'); 
     </script>
   </body>
 
