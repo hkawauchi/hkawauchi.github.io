@@ -1,8 +1,0 @@
-{
-    "name": "Kkka3",
-    "short_name": "Kkka3",
-    "permissions": ["notifications","gcm"],
-    "display": "standalone",
-    "gcm_sender_id": "703280822050",
-    "gcm_user_visible_only": true
-}

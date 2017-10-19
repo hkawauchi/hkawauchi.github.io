@@ -1,1 +1,0 @@
-importScripts('https://cdn.pushassist.com/account/assets/service-workers/kkka3-service-worker.js');
