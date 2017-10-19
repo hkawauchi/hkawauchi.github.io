@@ -21,8 +21,11 @@
     
     <script src="https://cdn.pushassist.com/account/assets/psa-kkka3.js" async="async"></script>
     <script> 
-    var subscriber = _pa_subscriberID();
-    console.log(subscriber); 
+    
+    var subscriber = _pa_isSubscribed();
+console.log(subscriber); 
+    // var subscriber = _pa_subscriberID();
+    // console.log(subscriber); 
     
     //Json format
     // {"subscriber_id":"GS44587asfaeTA48a8ereaEeRTEA767aaer87679", "browser":"Chrome"}
