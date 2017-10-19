@@ -21,8 +21,17 @@
     
     <script src="https://cdn.pushassist.com/account/assets/psa-kkka3.js" async="async"></script>
     <script> 
-          var _pa = [];
-          _pa.push('segmentname'); 
+    var subscriber = _pa_subscriberID();
+    console.log(subscriber); 
+    
+    //Json format
+    {"subscriber_id":"GS44587asfaeTA48a8ereaEeRTEA767aaer87679", "browser":"Chrome"}
+    
+    //Array format
+    var subscriber = JSON.parse(_pa_subscriberID());
+    console.log(subscriber['subscriber_id'] + ', ' + subscriber['browser']);    
+          // var _pa = [];
+          // _pa.push('segmentname'); 
     </script>
   </body>
 
