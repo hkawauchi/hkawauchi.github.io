@@ -1,0 +1,51 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
+    <link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="manifest" href="/manifest.json">
+    <script src="/script.js"></script>
+    <script charset="UTF-8" src="//cdn.sendpulse.com/28edd3380a1c17cf65b137fe96516659/js/push/cd25efaa09eb2e4632009f684645ba9c_1.js" async></script>
+
+  </head>
+
+  <body>
+    1
+    
+    <script src="https://cdn.pushassist.com/account/assets/psa-kkka3.js" async="async"></script>
+    <!-- <script type="text/javascript" src="https://cdn.pushassist.com/account/assets/psa-kkka3.js" async></script> -->
+    <script> 
+    var _pa = [];
+    _pa.push('foo'); 
+    
+    /*  */
+    
+    setTimeout(function(){
+      
+      var subscriber = _pa_isSubscribed();
+      console.log(subscriber); 
+
+    },1000);
+    // var subscriber = _pa_subscriberID();
+    // console.log(subscriber); 
+    
+    //Json format
+    // {"subscriber_id":"GS44587asfaeTA48a8ereaEeRTEA767aaer87679", "browser":"Chrome"}
+    
+    //Array format
+    // var subscriber = JSON.parse(_pa_subscriberID());
+    // console.log(subscriber['subscriber_id'] + ', ' + subscriber['browser']);    
+    
+    </script>
+  </body>
+
+</html>
