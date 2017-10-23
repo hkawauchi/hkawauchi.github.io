@@ -42,7 +42,7 @@
         var val = $(this).data("foo");
         console.log(val);
         OneSignal.push(function() {
-          OneSignal.sendTag("foo", foo).then(function(tagsSent) {
+          OneSignal.sendTag("foo", val).then(function(tagsSent) {
             // Callback called when tags have finished sending
             console.log("tags have finsished sending.");
           });
