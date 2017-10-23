@@ -48,6 +48,26 @@
           });
         });
       });
+      $(".js-btn-2").on("click", function() {
+        OneSignal.push(function(){
+          OneSignal.getTags().then(function(tags) {
+            var ary_keys = [];
+            for(var key in tags){
+              ary_keys.push(key);
+            }
+            console.log(ary_keys);
+            OneSignal.deleteTags(["key1", "key2"]).then(function(tagsDeleted) {
+              console.log("all tags have finished deleteing.");
+              OneSignal.getTags().then(function(tags) {
+                console.log(tags);
+              });
+              
+            });
+            
+          });
+        });
+      });
+      
     });
     </script>
 
@@ -59,7 +79,7 @@
       <button class="js-btn-1" data-foo="1">foo:1</button>
       <button class="js-btn-1" data-foo="2">foo:2</button>
     </div>
-
+    <div clas="js-btn-2">delete all tags</div>
   </body>
 
 </html>
