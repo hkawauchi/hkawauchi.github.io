@@ -36,18 +36,8 @@
         console.log(tags);
       });
     });
-
+    
     $(function(){
-      $(".js-btn-1").on("click", function() {
-        var val = $(this).data("foo");
-        console.log(val);
-        OneSignal.push(function() {
-          OneSignal.sendTag("foo", val).then(function(tagsSent) {
-            // Callback called when tags have finished sending
-            console.log("tags have finsished sending.");
-          });
-        });
-      });
       
       $(".js-btn-2").on("click", function() {
         OneSignal.push(function(){
@@ -75,16 +65,18 @@
   </head>
 
   <body>
-    3
-    <div>
-      <button class="js-btn-1" data-foo="1">foo:1</button>
-      <button class="js-btn-1" data-foo="2">foo:2</button>
-    </div>
+    <p>test page</p>
     <br>
-    <div>
-      <button class="js-btn-2">delete all tags</button>
-    </div>
-    
+    <p>
+      <a href="./cp.html">cp</a>
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>
+      <button class="js-btn-2">タグをすべて消去</button>
+    </p>
   </body>
 
 </html>
