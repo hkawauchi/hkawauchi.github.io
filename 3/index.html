@@ -56,7 +56,7 @@
               ary_keys.push(key);
             }
             console.log(ary_keys);
-            OneSignal.deleteTags(["key1", "key2"]).then(function(tagsDeleted) {
+            OneSignal.deleteTags(ary_keys).then(function(tagsDeleted) {
               console.log("all tags have finished deleteing.");
               OneSignal.getTags().then(function(tags) {
                 console.log(tags);
